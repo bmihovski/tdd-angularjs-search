@@ -1,7 +1,7 @@
 describe('', function() {
 	var scope = {};
 	beforeEach(function() {
-		module('search');
+		module('product');
 		inject(function($controller) {
 			var routeParams = {
 				id : 1

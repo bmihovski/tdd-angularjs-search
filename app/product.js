@@ -1,6 +1,6 @@
-var searchModule = angular.module('search', ['ngRoute']);
+var productModule = angular.module('product', ['ngRoute']);
 
-searchModule.config(['$routeProvider', function($routeProvider){
+productModule.config(['$routeProvider', function($routeProvider){
 	$routeProvider
 	.when('/splash', {
 		templateUrl: 'app/splash.html',
