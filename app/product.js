@@ -6,7 +6,7 @@ productModule.config(['$routeProvider', function($routeProvider){
 		templateUrl: 'app/splash.html',
 		controller: 'SplashController'
 	})
-	.when('/detail/:id', {
+	.when('/product/:id', {
 		templateUrl: 'app/searchDetail.html',
 		controller: 'SearchDetailController'
 	})
