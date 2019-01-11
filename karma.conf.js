@@ -20,6 +20,7 @@ module.exports = function(config) {
 		    	'app/searchController.js',
 		    	'app/recentlyViewedController.js',
 				'app/searchDetailController.js',
+				'app/cart.js',
 				'spec/unit/**/*.js' ],
 
 		// list of files / patterns to exclude

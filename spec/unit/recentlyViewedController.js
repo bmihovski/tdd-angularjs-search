@@ -1,4 +1,4 @@
-describe('', function() {
+describe('When recentlyViewed controller receiving broadcast event for a product', function() {
 	var recentlyViewedScope = null;
 	beforeEach(function() {
 		module('product');
@@ -10,7 +10,7 @@ describe('', function() {
 			$rootScope.$broadcast('SELECTEDPRODUCT', fakeProductEvent);
 		});
 	});
-	it('', function() {
+	it('Then recently viewed products is added', function() {
 		expect(recentlyViewedScope.recent.length).toBe(1);
 	});
 });
