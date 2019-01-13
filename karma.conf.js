@@ -17,6 +17,7 @@ module.exports = function(config) {
 		    	'node_modules/angular-mocks/angular-mocks.js',
 		    	'node_modules/angular-route/angular-route.js',
 		    	'app/product.js',
+		    	'app/broadcastService.js',
 		    	'app/searchController.js',
 		    	'app/recentlyViewedController.js',
 				'app/searchDetailController.js',

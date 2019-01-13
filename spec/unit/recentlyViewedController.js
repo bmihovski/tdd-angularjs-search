@@ -1,5 +1,9 @@
 describe('When recentlyViewed controller receiving broadcast event for a product', function() {
 	var recentlyViewedScope = null;
+	var fakeProduct = {productId: 1,
+						productName:"anyProductName",
+						productDescription: "anyProductDescription",
+						productImage:"anyProductImage"}
 	beforeEach(function() {
 		module('product');
 		inject(function($controller, $rootScope) {

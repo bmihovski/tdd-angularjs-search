@@ -17,12 +17,17 @@
 	<div ng-controller='RecentlyViewedController'>
 		<div ng-repeat="item in recent">{{item}}</div>
 	</div>
-
+	
+	<div ng-controller="SearchDetailController">
+		<div ng-repeat='item in productsToCart'>{{item}}</div>
+	</div>
+	
 	<div ng-controller='CartController'>
 		<ul>
 			<li ng-repeat="product in cart">{{product}}</li>
 		</ul>
 	</div>
+
 
 	<script type="text/javascript" src="node_modules/angular/angular.js"></script>
 	<script type="text/javascript"

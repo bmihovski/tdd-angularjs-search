@@ -1,7 +1,7 @@
 angular.module('product')
 	.controller('CartController', ['$scope', '$rootScope', function($scope, $rootScope) {
 		$scope.cart = [];
-		$rootScope.$on('SAVEDTOCARD', function(productId) {
+		$rootScope.$on('SAVEDTOCART', function($event, productId) {
 			$scope.cart.push(productId);
-		})
+		});
 	}]);
