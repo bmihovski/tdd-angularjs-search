@@ -2,7 +2,7 @@
 exports.config = {
   // Do not start a Selenium Standalone sever - only run this using chrome.
   chromeOnly: true,
-  chromeDriver: './node_modules/protractor/node_modules/webdriver-manager/selenium/chromedriver_2.45.exe',
+  //chromeDriver: './node_modules/protractor/node_modules/webdriver-manager/selenium/chromedriver_2.45.exe',
 
   // Capabilities to be passed to the webdriver instance.
   capabilities: {

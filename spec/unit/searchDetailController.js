@@ -1,18 +1,11 @@
-describe('', function() {
-	var scope = {};
-	beforeEach(function() {
-		module('search');
-		inject(function($controller) {
-			var routeParams = {
-				id : 1
-			};
-			$controller('SearchDetailController', {
-				$scope : scope,
-				$routeParams : routeParams
-			});
-		});
-	});
-	it('Should return results', function() {
-		expect(scope.detail.id).toBe(1);
-	});
-});
+angular.module('product').controller(
+		'SearchDetailController',
+		[ '$scope', '$routeParams', '$rootScope',
+				function($scope, $routeParams, $rootScope) {
+					$scope.detail = {
+						id : $routeParams.id
+					};
+					$scope.saveProduct = function(productId) {
+						$rootScope.$broadcast('SAVEDTOCART', productId);
+					};
+				} ]);

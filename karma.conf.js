@@ -16,8 +16,12 @@ module.exports = function(config) {
 		files : [ 'node_modules/angular/angular.js',
 		    	'node_modules/angular-mocks/angular-mocks.js',
 		    	'node_modules/angular-route/angular-route.js',
-		    	'app/search.js',
+		    	'app/product.js',
+		    	'app/broadcastService.js',
+		    	'app/searchController.js',
+		    	'app/recentlyViewedController.js',
 				'app/searchDetailController.js',
+				'app/cart.js',
 				'spec/unit/**/*.js' ],
 
 		// list of files / patterns to exclude
