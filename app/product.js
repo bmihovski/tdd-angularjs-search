@@ -1,16 +1,8 @@
-var productModule = angular.module('product', ['ngRoute']);
+angular.module('product', []);
 
-productModule.config(['$routeProvider', function($routeProvider){
-	$routeProvider
-	.when('/splash', {
-		templateUrl: 'app/splash.html',
-		controller: 'SplashController'
-	})
-	.when('/product/:id', {
-		templateUrl: 'app/searchDetail.html',
-		controller: 'SearchDetailController'
-	})
-	.otherwise({
-		redirectTo: '/splash'
-	});
-}]);
+/*angular.module('product',['ngMockE2E'])
+ 		.run(['$httpBackend',function($httpBackend) {
+ 				var testProduct = productDataBuilder().build();
+ 				var products = [testProduct];
+ 				$httpBackend.whenGET('/products').respond(products);
+ 		  	}]);*/
